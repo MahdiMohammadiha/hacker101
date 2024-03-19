@@ -11,7 +11,7 @@
     <ol>
         <li>
             First we need to get the <b>allBugs</b>'s <b>test</b> and <b>ID</b>:
-            <pre style="border: 1px black solid; padding: 10px; border-radius: 3px;">
+            <pre>
     {
         allBugs {
             id
@@ -23,7 +23,7 @@
         </li>
         <li>
             Change the state with following command:
-            <pre style="border: 1px black solid; padding: 10px; border-radius: 3px;">
+            <pre>
     mutation {
         modifyBug(id:2, private:false) {
             ok
